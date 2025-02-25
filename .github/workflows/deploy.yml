@@ -1,9 +1,8 @@
 name: deploy
 
 on:
-  push:
-    branches: [main]
-
+  workflow_dispatch:
+# effectively disabled while hosting environment is decomissioned
 jobs:
   ecr:
     runs-on: ubuntu-latest
